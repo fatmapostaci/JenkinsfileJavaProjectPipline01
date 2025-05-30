@@ -2,16 +2,15 @@ import java.util.Scanner;
 
 public class Class02 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
         // Kullanıcıdan isim alma
         System.out.print("Adınızı girin: ");
-        String isim = scanner.nextLine();
+        String isim = "fatma";
 
         // Kullanıcıdan yaş alma
         System.out.print("Yaşınızı girin: ");
-        int yas = scanner.nextInt();
-        scanner.nextLine(); // nextInt'ten sonra nextLine için buffer temizliği
+        int yas = 15;
+
 
         // Yaşa göre mesaj verme
         mesajVer(isim, yas);
@@ -24,13 +23,12 @@ public class Class02 {
 
         // Basit bir hesaplama
         System.out.print("\nİki sayı girin (örnek: 3 5): ");
-        int sayi1 = scanner.nextInt();
-        int sayi2 = scanner.nextInt();
+        int sayi1 = 3;
+        int sayi2 = 3;
 
         int toplam = topla(sayi1, sayi2);
         System.out.println("Toplam: " + toplam);
 
-        scanner.close();
     }
 
     // Yaşa göre mesaj veren metod
